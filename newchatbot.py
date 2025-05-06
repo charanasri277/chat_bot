@@ -5,7 +5,7 @@ import streamlit as st
 # Use Streamlit secrets to load your OpenAI API key
 from openai import OpenAIError
 
-openai_api_key = st.secrets["AIzaSyD1hMpfB_lrgFtjzggrFXgSDkvTH-byo9I"]
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 # Initialize the model with API key
 model = ChatOpenAI(openai_api_key=openai_api_key)
